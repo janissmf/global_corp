@@ -25,6 +25,7 @@ public class ApiController {
 
   private final ApiService apiService;
 
+
   @PostMapping(
       value = "/migration/ocr",
       consumes = MediaType.APPLICATION_JSON_VALUE,
