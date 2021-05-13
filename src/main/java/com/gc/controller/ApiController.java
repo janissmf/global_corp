@@ -60,7 +60,7 @@ public class ApiController {
   }
 
   @GetMapping(value = "/cached/possibly-some")
-  public ResponseEntity<Boolean> checkPosibleWord(@RequestParam(name = "word") String word) {
+  public ResponseEntity<Boolean> checkPossibleWord(@RequestParam(name = "word") String word) {
     return new ResponseEntity<>(apiService.checkPossibleWord(word), HttpStatus.OK);
   }
 
